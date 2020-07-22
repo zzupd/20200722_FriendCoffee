@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url("http://zzupd.dothome.co.kr/200528/cssReset/reset.css");
+
+/* 공통영역 */
+* {
+    color: #888;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div#wrap {
+    width: 1200px;
+    margin: 10px auto;
+}
+
+ul {
+    list-style: none;
+}
+/* 공통영역 */
+
+
+/* Guide Line */
+div#wrap {
+    border: 1px solid #000;
+}
+/*div#topHeader {
+    border: 1px solid #8f0;
+}*/
+/*div#topHeader>* {
+    border: 1px solid #00f;
+}*/
+/*div#logo {
+    border: 1px solid #8f0;
+}*/
+/*
+div#logo>* {
+    border: 1px solid #00f;
+}
+*/
+#header>nav#gnb li {
+    border: 1px solid #000;
+}
+/* Guide Line */
+
+
+/* header#header 시작 */
+header#header>div#topHeader {
+    display: flex;
+    justify-content: space-between;
+}
+#lnbMenu>li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+#topHeader a {
+    color: #555;
+    font-size: 13px;
+    font-weight: bold;
+}
+#topHeader img {
+    vertical-align: middle;
+}
+
+div#logo {
+    padding: 10px 0;
+    position: relative;
+}
+#logo>div#headerLogo {
+    text-align: center;
+}
+#logo>div#search {
+    width: 200px;
+    text-align: right;
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#logo>div#search>input {
+    padding: 4px;
+    border: none;
+    outline: none;
+}
+#logo>div#search>img {
+    vertical-align: middle;
+}
+
+#header>nav#gnb li {
+    float: left;
+    text-align: center;
+}
+#header>nav#gnb li:first-child {
+    width: 56px;
+}
+#header>nav#gnb li:not(:first-child) {
+    width: 142px;
+    /* 최종적용크기 143*/
+}
+/* header#header 끝 */
+
+
+
+
+
+
+
+
