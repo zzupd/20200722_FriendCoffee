@@ -53,10 +53,129 @@
             </nav>  <!-- nav#gnb -->
         </header>   <!-- header#header -->
 
+        <div id="locator">
+
+           <ul>
+               <li>home</li>
+               <li>></li>
+               <li>드립용품</li>
+               <li>></li>
+               <li>드립세트</li>
+               <li>></li>
+               <li>프랜드</li>
+               <li>></li>
+               <li>프랜드 POT 드립세트 102D(3~4인용)</li>
+           </ul>
 
 
+        </div> <!-- div#locator -->
+
+        <hr>
+
+        <main id="main">
+
+           <div id="goodsImgArea">
+
+              <div id="goodsImg">
+                  <img src="images/dripSet_Img_01.jpg" alt="상품이미지">
+              </div>   <!-- div#goodsImg -->
+
+               <div id="extendImg" onclick="goModal()">
+                  <img src="images/closeup_Img_01.gif" alt="이미지확대">
+                  <span>큰 이미지 보기</span>
+               </div>  <!-- div#extendImg-->
+
+           </div>   <!-- div#goodsImgArea -->
+
+           <div id="orderInfoArea">
+
+              <h4>프랜드 POT 드립세트 102D(3~4인용)</h4>
+
+              <ul id="saleBasicInfo">
+                  <li>
+                      <span>적립금</span>
+                      <span>2%</span>
+                  </li>
+                  <li>
+                      <span>판매가격</span>
+                      <span class="price">34,000원</span>
+                  </li>
+              </ul>  <!-- div#saleBasicInfo-->
+
+              <table id="orderPrice">
+                  <tbody>
+                      <tr>
+                          <td>
+                              프랜드 POT 드립세트
+                              102D(3~4인용)
+                          </td>
+                          <td>
+                              <div id="valignFrame">
+                                  <input type="text"
+                                  id="goodsCnt" value="1">
+                                  <span id="cntBtn">
+                                      <img src="images/up_Icon_01.gif" alt="1개 추가">
+                                      <img src="images/down_Icon_01.gif" alt="1개 감소">
+                                  </span>
+                              </div>
+                          </td>
+                          <td>
+                              <span class="unitPrice">
+                              34,000
+                              </span>
+                              원
+                          </td>
+                      </tr>
+                      <tr>
+                          <td colspan="3">
+                             총 상품 금액
+                              <span class="price">
+                              34,000
+                              </span>
+                              원
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>  <!-- table#orderPrice-->
+
+              <div id="snsIcon">
+                  <img src="images/faceBook_imgBtn_01.gif" alt="페이스북아이콘">
+                  <img src="images/twitter_imgBtn_01.gif" alt="트위터아이콘">
+              </div>  <!-- div#snsIcon -->
+
+              <div id="orderBtnArea">
+                  <img src="images/order_Btn_01.gif" alt="주문하기버튼">
+                  <img src="images/cart_Btn_01.gif" alt="장바구니버튼">
+                  <img src="images/wish_Btn_01.gif" alt="찜하기버튼">
+              </div>  <!-- div#orderBtnArea -->
 
 
-        <script src="script/script.js"></script>
+           </div>  <!-- div#orderInfoArea-->
+
+
+        </main> <!-- main#main -->
+
+
+    </div>  <!-- div#wrap -->
+
+    <!-- (모달) 레이어팝업 시작:
+           div#wrap 종료 이후에 모달레이어팝업용 div 생성 -->
+    <div id="modalArea">
+        <!-- 포지션:absolute, left:0 top:0, w100% h100%,
+               background-color: 회색계열(또는 검정색)에 불투명도 지정, display: none;  -->
+
+        <div id="popUpArea">
+            <img src="images/dripSet_Img_01.jpg" alt="모달팝업이미지">
+        </div>
+        <!-- 포지션:absolute, left:50% top:0% + transform: translate(-50%, -50%),
+                 w,  h => 필요한 폭과 높이;                 -->
+        <div id="closePopUp" onclick="popUpClose()">
+            &times;
+        </div>
     </div>
-</body></html>
+    <!-- (모달) 레이어팝업 끝 -->
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>

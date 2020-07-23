@@ -3,7 +3,7 @@
 
 /* 공통영역 */
 * {
-    color: #888;
+    color: #555;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -20,9 +20,9 @@ ul {
 
 
 /* Guide Line */
-div#wrap {
-    border: 1px solid #000;
-}
+/*div#wrap {
+    border: 8px solid #08f;
+}*/
 /*div#topHeader {
     border: 1px solid #8f0;
 }*/
@@ -37,9 +37,11 @@ div#logo>* {
     border: 1px solid #00f;
 }
 */
+/*
 #header>nav#gnb li {
     border: 1px solid #000;
 }
+*/
 /* Guide Line */
 
 
@@ -64,7 +66,10 @@ header#header>div#topHeader {
 
 div#logo {
     padding: 10px 0;
+    margin-bottom: 14px;
+
     position: relative;
+
 }
 #logo>div#headerLogo {
     text-align: center;
@@ -87,18 +92,243 @@ div#logo {
     vertical-align: middle;
 }
 
+
+    /* GNB 메뉴 시작 - display:flex; 적용 */
+
+#header>nav#gnb>ul {
+    display: flex;
+}
 #header>nav#gnb li {
-    float: left;
+    height: 62px;
     text-align: center;
+    line-height: 62px;
+
+    background-color: #3e4347;
 }
 #header>nav#gnb li:first-child {
-    width: 56px;
+    width: 54px;
 }
 #header>nav#gnb li:not(:first-child) {
-    width: 142px;
-    /* 최종적용크기 143*/
+    width: 143px;
+    border-left: 3px solid #373a3f;
 }
+#header>nav#gnb li:hover a {
+    color: #ff0;
+}  /* GNB 메뉴 마우스 hover 상태의 글자색상 변경(노랑색) */
+#header>nav#gnb a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#header>nav#gnb li:first-child a {
+    font-size: 24px;
+}
+#header>nav#gnb li:nth-child(2) a {
+    color: #ff0;
+}
+    /* GNB 메뉴 끝 */
+
 /* header#header 끝 */
+
+
+/* div#locator 시작 */
+div#locator {
+    margin: 40px 0;
+}
+div#locator ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div#locator li {
+    color: #000;
+    font-size: 12px;
+    padding-right: 6px;
+    float: left;
+}
+/* div#locator 끝 */
+
+
+/* main#main 시작 */
+main#main {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#main>div {
+    width: 500px;
+    /*border: 1px solid #f00;*/
+}
+
+    /* div#goodsImg 시작 */
+#main div#goodsImg {
+    text-align: center;
+}
+#main div#goodsImg img {
+    width: 300px;
+}
+#main div#extendImg {
+    width: 110px;
+    text-align: center;
+    /*border: 1px solid #000;*/
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+#main div#extendImg img {
+    vertical-align: middle;
+}
+#main div#extendImg span {
+    font-size: 11px;
+    font-weight: bold;
+}
+    /* div#goodsImg 끝 */
+
+
+    /* div#orderInfoArea 시작 */
+#orderInfoArea {
+    padding-left: 160px;
+}
+#orderInfoArea>h4 {
+    margin-bottom: 20px;
+}
+#orderInfoArea>ul {
+    margin-bottom: 20px;
+}
+#orderInfoArea>ul#saleBasicInfo>li {
+    height: 24px;
+    line-height: 24px;
+}
+#orderInfoArea>ul#saleBasicInfo span {
+    width: 100px;
+    font-size: 12px;
+    font-weight: bold;
+
+    display: inline-block;
+
+}
+#orderInfoArea .price {
+    color: #f50;
+    font-weight: bold;
+}
+#orderInfoArea table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+#orderInfoArea table td {
+    height: 40px;
+    font-size: 12px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}
+#orderInfoArea table td:first-child {
+    width: 160px;
+}
+#orderInfoArea table td:nth-child(2) {
+    width: 90px;
+    padding-top: 4px;
+}
+#orderInfoArea table td:last-child {
+    width: 90px;
+}
+#orderInfoArea table tr:first-child td {
+    border: none;
+}
+#orderInfoArea table tr:last-child td {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#orderInfoArea table #valignFrame {
+    width: 70px;
+    height: 34px;
+    /*border: 1px solid #f00;*/
+
+    position: relative;
+}
+#orderInfoArea table input#goodsCnt {
+    width: 40px;
+    height: 30px;
+    text-align: right;
+    padding: 6px;
+
+    position: absolute;
+}
+
+#orderInfoArea table span#cntBtn {
+    width: 15px;
+    height: 26px;
+    text-align: center;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+
+    position: absolute;
+    left: 44px;
+}
+#orderInfoArea table span#cntBtn img {
+    position: relative;
+}
+#orderInfoArea table span#cntBtn img:last-child {
+    top: -6px;
+}
+
+div#snsIcon {
+    margin-bottom: 40px;
+}
+
+    /* div#orderInfoArea 끝 */
+
+
+/* main#main 끝 */
+
+
+/* div#modalArea 시작 */
+ /*div#modalArea =>
+               포지션:absolute, left:0 top:0, w100% h100%,
+               background-color: 회색계열(또는 검정색)에 불투명도 지정, display: none;  */
+div#modalArea {
+    /*border: 4px solid #f00;    */
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+/* div#popUpArea =>
+                포지션:absolute, left:50% top:0% +
+                transform: translate(-50%, -50%),
+                 w,  h => 필요한 폭과 높이;*/
+div#popUpArea {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+div#closePopUp {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    cursor: pointer;
+}
+/* div#modalArea 끝 */
 
 
 
