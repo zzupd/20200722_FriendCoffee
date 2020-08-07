@@ -271,6 +271,7 @@ main#main {
 }
 #orderInfoArea table span#cntBtn img {
     position: relative;
+    cursor: pointer;
 }
 #orderInfoArea table span#cntBtn img:last-child {
     top: -6px;
